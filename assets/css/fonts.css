@@ -1,0 +1,45 @@
+@font-face { 
+    font-family: "TTHovesDemiBold";
+    src: url("../fonts/TTHovesDemiBold/TTHovesDemiBold.eot");
+    src: url("../fonts/TTHovesDemiBold/TTHovesDemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/TTHovesDemiBold/TTHovesDemiBold.woff") format("woff"),
+    url("../fonts/TTHovesDemiBold/TTHovesDemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face { 
+    font-family: "TTHovesRegular";
+    src: url("../fonts/TTHovesRegular/TTHovesRegular.eot");
+    src: url("../fonts/TTHovesRegular/TTHovesRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/TTHovesRegular/TTHovesRegular.woff") format("woff"),
+    url("../fonts/TTHovesRegular/TTHovesRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "TTHovesMedium";
+    src: url("../fonts/TTHovesMedium/TTHovesMedium.eot");
+    src: url("../fonts/TTHovesMedium/TTHovesMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/TTHovesMedium/TTHovesMedium.woff") format("woff"),
+    url("../fonts/TTHovesMedium/TTHovesMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face { 
+    font-family: "TTHovesBold";
+    src: url("../fonts/TTHovesBold/TTHovesBold.eot");
+    src: url("../fonts/TTHovesBold/TTHovesBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/TTHovesBold/TTHovesBold.woff") format("woff"),
+    url("../fonts/TTHovesBold/TTHovesBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face { 
+    font-family: "TTHovesExtraBold";
+    src: url("../fonts/TTHovesExtraBold/TTHovesExtraBold.eot");
+    src: url("../fonts/TTHovesExtraBold/TTHovesExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/TTHovesExtraBold/TTHovesExtraBold.woff") format("woff"),
+    url("../fonts/TTHovesExtraBold/TTHovesExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
