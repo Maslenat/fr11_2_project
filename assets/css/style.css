@@ -1,2 +1,60 @@
 @import url('normalize.css');
 @import url('fonts.css');
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/*контейнер для выравнивания контента на всей странице */
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+/*  стили для header*/
+.header{
+    background-color: transparent;
+    position: absolute;
+    margin-top: 20px;
+    width: 100vw;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item{
+    margin-right: 40px;
+    list-style-type: none;
+
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    font-family:'TTHovesMedium';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+color: #32495E;
+text-decoration: none;
+}
+.header__link:hover, .header__link:focus,.header__link:active
+{
+    opacity: .7;
+    text-decoration: underline;
+    
+}
+
+
