@@ -1,14 +1,18 @@
 @import url('normalize.css');
 @import url('fonts.css');
-html{
+
+html {
     box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 /*контейнер для выравнивания контента на всей странице */
-.wrapper{
+.wrapper {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -16,45 +20,57 @@ html{
 
 
 /*  стили для header*/
-.header{
+.header {
     background-color: transparent;
     position: absolute;
     margin-top: 20px;
     width: 100vw;
 }
-.header__wrapper{
+
+.header__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-   
+
 }
-.header__list{
+
+.header__list {
     display: flex;
     flex-wrap: wrap;
 }
-.header__item{
+
+.header__item {
     margin-right: 40px;
     list-style-type: none;
 
 }
-.header__item:last-child{
+
+.header__item:last-child {
     margin-right: 0;
 }
-.header__link{
-    font-family:'TTHovesMedium';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
-color: #32495E;
-text-decoration: none;
+
+.header__item:nth-child(even) {
+    padding-right: 12px;
+    background-image: url('../images/HeaderArrow.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
 }
-.header__link:hover, .header__link:focus,.header__link:active
-{
+
+.header__link {
+    font-family: 'TTHovesMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #32495E;
+    text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
     opacity: .7;
     text-decoration: underline;
-    
+
 }
-
-
