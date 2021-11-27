@@ -66,6 +66,7 @@ html {
     color: #32495E;
     text-decoration: none;
 }
+/*Эффеты навигации ссылок-пунктов меню*/
 
 .header__link:hover,
 .header__link:focus,
@@ -75,7 +76,7 @@ html {
 
 }
 
-
+/* Блок для выпадающего меню  в хедере*/
 
 .header__item_popup {
     position: relative;
@@ -97,7 +98,6 @@ html {
 }
 
 .header__link-submenu {
-
     color: #32495E;
     font-family: 'TTHovesMedium';
     font-style: normal;
@@ -108,9 +108,12 @@ html {
 
 }
 
-.header__item-submenu {
+.header__item-submenu { 
     padding: 10px;
 }
+
+/* эффеты при наведении для выпадающего меню*/
+
 
 .header__item-submenu:hover {
 
@@ -120,7 +123,10 @@ html {
 
 .header__item-submenu:hover a {
     color: #F9F9F9;
-}
+    }
+
+/* адаптивность логотипа*/
+
 
 @media(min-width:769px) {
     .header__logo-picadapt {
