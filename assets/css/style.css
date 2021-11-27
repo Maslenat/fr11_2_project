@@ -75,22 +75,68 @@ html {
 
 }
 
-@media(max-width:768px) 
-{
-    .header__logo-pic {
+
+
+.header__item_popup {
+    position: relative;
+
+}
+
+.header__submenu {
+    padding: 0;
+    width: max-content;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+}
+
+.header__item_popup:hover .header__submenu {
+    display: block;
+}
+
+.header__link-submenu {
+
+    color: #32495E;
+    font-family: 'TTHovesMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+}
+
+.header__item-submenu {
+    padding: 10px;
+}
+
+.header__item-submenu:hover {
+
+    background-color: #32495E;
+
+}
+
+.header__item-submenu:hover a {
+    color: #F9F9F9;
+}
+
+@media(min-width:769px) {
+    .header__logo-picadapt {
         display: none;
-    }
-    .header {
-        background-color: #FFFFFF;
-       position: fixed;
-        margin-top: 0;
-        width: 100vw;
     }
 }
 
-@media(min-width:769px)
-{
-    .header__logo-adapt {
+@media(max-width:768px) {
+    .header__logo-pic {
         display: none;
+    }
+
+    .header {
+        background-color: #FFFFFF;
+        position: fixed;
+        margin-top: 0;
+        width: 100vw;
     }
 }
