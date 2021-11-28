@@ -66,6 +66,7 @@ html {
     color: #32495E;
     text-decoration: none;
 }
+
 /*Эффеты навигации ссылок-пунктов меню*/
 
 .header__link:hover,
@@ -108,7 +109,7 @@ html {
 
 }
 
-.header__item-submenu { 
+.header__item-submenu {
     padding: 10px;
 }
 
@@ -123,19 +124,25 @@ html {
 
 .header__item-submenu:hover a {
     color: #F9F9F9;
-    }
+}
 
-/* адаптивность логотипа*/
+/* адаптивность логотипа и хедера*/
 
 
-@media(min-width:769px) {
-    .header__logo-picadapt {
+
+@media (min-width:1024px) {
+
+    .header__logo-picadapt,
+    .header__button {
         display: none;
     }
 }
 
-@media(max-width:768px) {
-    .header__logo-pic {
+
+@media (max-width:1023px) {
+
+    .header__logo-pic,
+    .header__button {
         display: none;
     }
 
@@ -145,4 +152,114 @@ html {
         margin-top: 0;
         width: 100vw;
     }
+}
+
+@media (max-width:767px) {
+    .header {
+        background-color: #FFFFFF;
+        position: fixed;
+        margin-top: 0;
+        width: 100vw;
+    }
+
+    .header__list,
+    .header__logo-pic {
+        display: none;
+    }
+
+    .header__logo-picadapt {
+        width: 110px;
+        height: 30px;
+    }
+
+    .header__button {
+        padding: 10px;
+        display: block;
+        min-width: 45px;
+        min-height: 45px;
+        background-color: #32495E;
+        position: relative;
+
+    }
+
+    .header__menu-container {
+        background-color: #32495E;
+        display: none;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        right: -2px;
+        min-width: 206px;
+        min-height: 416px;
+
+    }
+
+    .header__list-mobile {
+        padding: 60px 45px;
+
+        margin: 0;
+
+        list-style-type: none;
+
+
+
+
+    }
+
+    .header__link-mobile {
+
+        font-family: 'TTHovesMedium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #F9F9F9;
+        text-decoration: none;
+
+    }
+
+    .header__item-mobile {
+
+        padding-bottom: 25px;
+        text-align: end;
+    }
+
+    .header__button-lang {
+        width: 45px;
+        min-height: 45px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: "TTHovesRegular";
+        font-size: 14px;
+        line-height: 20px;
+        background-color: transparent;
+        text-align: center;
+        color: #F1F6FF;
+        border: 1px solid #F1F6FF;
+        border-radius: 5px;
+    }
+
+    .header__container-button_position {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+        margin-right: 45px;
+    }
+
+    .header__button:hover .header__menu-container {
+        display: block;
+    }
+
+    .header__button-lang:hover {
+        color: #455A75;
+        background-color: #FFFFFF;
+
+    }
+
+    .header__link-mobile:hover {
+        font-weight: 700;
+        font-size: 14px;
+
+    }
+
 }
