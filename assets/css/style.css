@@ -10,6 +10,10 @@ html {
 *::after {
     box-sizing: inherit;
 }
+h1,p, ul, li{
+    margin: 0;
+    padding: 0;
+}
 
 /*контейнер для выравнивания контента на всей странице */
 .wrapper {
@@ -225,7 +229,7 @@ html {
     }
 
     .header__button-lang {
-        width: 45px;
+        min-width: 45px;
         min-height: 45px;
         font-style: normal;
         font-weight: 400;
@@ -261,5 +265,97 @@ html {
         font-size: 14px;
 
     }
+
+}
+
+/* Главная страница*/
+
+.main__glavnoe{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(to right, #E95258 50%, #F9F9F9 50%);
+ 
+}
+.main__block-left{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+ width: 50%;
+ height: 100vh;
+ padding-right: 8%;
+
+}
+.main__block-right {
+    width: 50%;
+    height: 100vh;
+   
+   }
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main__h1
+{padding-top: 200px;
+ padding-bottom: 50px;
+  font-family: 'TTHovesExtraBold';
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 36px;
+text-align: right;
+text-transform: uppercase;
+color: #F9F9F9;
+}
+.main__text{
+   
+ padding-bottom: 12px;
+font-family:'TTHovesDemiBold';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+text-align: right;
+color: #F9F9F9;
+}
+.main__list{
+    list-style-type: none;
+    text-align: end;
+}
+.main__item::after{
+    content: "○";
+    color: white;
+}
+.main__item{
+    padding-bottom: 12px;
+}
+.main_link{
+    font-family: 'TTHovesRegular';
+    text-decoration: none;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #F9F9F9;
+}
+
+/*кнопка с белым оформлением*/
+
+
+.button_white{
+    padding: 16px 44px;
+font-family: 'TTHovesMedium';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #F9F9F9;
+background: transparent;
+border: 1px solid #F9F9F9;
+border-radius: 25px;
+}
+.button_white:hover, .button_white:focus {
+    background: white;
+    color: #32495E;
 
 }
