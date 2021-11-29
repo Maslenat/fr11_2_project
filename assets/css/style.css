@@ -15,6 +15,7 @@ h1,p, ul, li{
     padding: 0;
 }
 
+
 /*контейнер для выравнивания контента на всей странице */
 .wrapper {
     max-width: 1170px;
@@ -273,8 +274,14 @@ h1,p, ul, li{
 .main__glavnoe{
     min-height: 100vh;
     min-width: 100vw;
-    background: linear-gradient(to right, #E95258 50%, #F9F9F9 50%);
+    background:no-repeat left bottom/25%  url('../images/PictureOnRed.svg'),
+    no-repeat right bottom/25% url('../images/PictureOnWhite.svg'),
+    linear-gradient(to right, #E95258 50%, #F9F9F9 50%);
  
+}
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
 }
 .main__block-left{
     display:flex;
@@ -286,14 +293,15 @@ h1,p, ul, li{
 
 }
 .main__block-right {
-    width: 50%;
-    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+ width: 50%;
+ height: 100vh;
+ padding-left: 8%;
    
    }
-.container-flex{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .main__h1
 {padding-top: 200px;
  padding-bottom: 50px;
@@ -321,6 +329,11 @@ color: #F9F9F9;
     list-style-type: none;
     text-align: end;
 }
+.main__list-right{
+    list-style-type: none;
+    text-align: start;
+
+}
 .main__item::after{
     content: "○";
     color: white;
@@ -328,17 +341,30 @@ color: #F9F9F9;
 .main__item{
     padding-bottom: 12px;
 }
-.main_link{
+.main__item-right{
+    padding-bottom: 12px;
+}
+.main__item-right::before{
+    content: "○";
+    color: #32495E;
+}
+.main__link{
     font-family: 'TTHovesRegular';
     text-decoration: none;
     font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 17px;
-color: #F9F9F9;
+
+}
+.main__link_white{
+    color: #F9F9F9;
+}
+.main__link_blue{
+    color: #32495E;
 }
 
-/*кнопка с белым оформлением*/
+/*кнопка с белым оформлением  и синим оформлением*/
 
 
 .button_white{
@@ -359,3 +385,52 @@ border-radius: 25px;
     color: #32495E;
 
 }
+
+.button_blue {
+padding: 16px 44px;
+font-family: 'TTHovesMedium';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #32495E;
+background: transparent;
+border: 1px solid #32495E;
+border-radius: 25px;
+
+}
+
+.button_blue:hover, .button_blue:focus {
+    background: #32495E;
+    color: white;
+}
+
+/*конец стили кнопок*/
+
+
+
+.main__h1-right
+    {padding-top: 200px;
+        padding-bottom: 50px;
+         font-family: 'TTHovesExtraBold';
+       font-style: normal;
+       font-weight: 800;
+       font-size: 28px;
+       line-height: 36px;
+       text-align: left;
+       text-transform: uppercase;
+       color:#32495E;
+       }
+.main__text-rigt{
+    padding-bottom: 12px;
+    font-family:'TTHovesDemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color:#32495E;
+
+}
+       
