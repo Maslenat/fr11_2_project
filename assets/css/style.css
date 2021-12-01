@@ -11,6 +11,15 @@ html {
     box-sizing: inherit;
 }
 
+h1,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
 /*контейнер для выравнивания контента на всей странице */
 .wrapper {
     max-width: 1170px;
@@ -41,7 +50,7 @@ html {
 }
 
 .header__item {
-    margin-right: 40px;
+    margin-right: 39px;
     list-style-type: none;
 
 }
@@ -126,7 +135,261 @@ html {
     color: #F9F9F9;
 }
 
-/* адаптивность логотипа и хедера*/
+
+
+/* Главная страница*/
+
+.main__glavnoe {
+    min-height: fit-content;
+    min-width: 100vw;
+    background: no-repeat left bottom/25% url('../images/PictureOnRed.svg'),
+        no-repeat right bottom/25% url('../images/PictureOnWhite.svg'),
+        linear-gradient(to right, #E95258 50%, #F9F9F9 50%);
+
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__block-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    padding-right: 8%;
+
+}
+
+.main__block-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-left: 8%;
+
+}
+
+.main__h1 {
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-family: 'TTHovesExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #F9F9F9;
+}
+
+.main__text {
+
+    padding-bottom: 12px;
+    font-family: 'TTHovesDemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #F9F9F9;
+}
+
+.main__list {
+    list-style-type: none;
+    text-align: end;
+    padding-bottom: 100px;
+}
+
+.main__list-right {
+    list-style-type: none;
+    text-align: start;
+    padding-bottom: 100px;
+}
+
+.main__item::after {
+    content: "○";
+    color: white;
+}
+
+.main__item {
+    padding-bottom: 12px;
+}
+
+.main__item-right {
+    padding-bottom: 12px;
+}
+
+.main__item-right::before {
+    content: "○";
+    color: #32495E;
+}
+
+.main__link {
+    font-family: 'TTHovesRegular';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.main__link_white {
+    color: #F9F9F9;
+}
+
+.main__link_blue {
+    color: #32495E;
+}
+
+/*кнопка с белым оформлением  и синим оформлением*/
+
+
+.button_white {
+    padding: 16px 44px;
+    font-family: 'TTHovesMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #F9F9F9;
+    background: transparent;
+    border: 1px solid #F9F9F9;
+    border-radius: 25px;
+}
+
+.button_white:hover,
+.button_white:focus {
+    background: white;
+    color: #32495E;
+
+}
+
+.button_blue {
+    padding: 16px 44px;
+    font-family: 'TTHovesMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #32495E;
+    background: transparent;
+    border: 1px solid #32495E;
+    border-radius: 25px;
+
+}
+
+.button_blue:hover,
+.button_blue:focus {
+    background: #32495E;
+    color: white;
+}
+
+/*конец стили кнопок*/
+
+
+
+.main__h1-right {
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-family: 'TTHovesExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #32495E;
+}
+
+.main__text-rigt {
+    padding-bottom: 12px;
+    font-family: 'TTHovesDemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color: #32495E;
+
+}
+
+/*блок мессенджеров*/
+.messenger {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-left: 25%;
+}
+
+.massenger__block {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 25px;
+    border: 1px solid #FFFFFF;
+
+}
+
+.messenger__pic {
+    display: block;
+    max-width: 100%;
+    margin: 25% auto;
+}
+
+/* начало заливка фона значов и подсветка границы)*/
+.massenger__block_blue {
+    background: #32495E;
+    box-shadow: 0 0 10px #32495E;
+}
+
+.massenger__block_green {
+    background: #14AC51;
+    box-shadow: 0 0 10px #14AC51;
+
+}
+
+.massenger__block_violet {
+    background: #C33A7C;
+    box-shadow: 0 0 10px #C33A7C;
+}
+
+.massenger__block_lightblue {
+    background: #4598FF;
+    box-shadow: 0 0 10px #4598FF;
+}
+
+.massenger__block_red {
+    background: #E95258;
+    box-shadow: 0 0 10px #E95258;
+}
+/*эффекты при наведении*/
+.massenger__block_red:hover {
+    box-shadow: 0 0 20px red;
+}
+.massenger__block_blue:hover {
+    box-shadow: 0 0 20px #32495E;
+}
+.massenger__block_lightblue:hover {
+    box-shadow: 0 0 20px #4598FF;
+}
+.massenger__block_green:hover{
+    box-shadow: 0 0 20px #14AC51;
+
+}
+.massenger__block_violet:hover{
+    box-shadow: 0 0 20px #C33A7C;
+
+}
+
+/* конец заливка фона значов и подсветка границы)*/
+
+
+
+/* адаптивность*/
 
 
 
@@ -152,9 +415,26 @@ html {
         margin-top: 0;
         width: 100vw;
     }
+
+    .main__h1-right,
+    .main__h1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .main__text-rigt,
+    .main__text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .massenger__block {
+        min-width: 40px;
+        min-height: 40px;}
 }
 
-@media (max-width:767px) {
+@media (max-width:767px)
+ {
+     /*адаптив хедер*/
     .header {
         background-color: #FFFFFF;
         position: fixed;
@@ -225,7 +505,7 @@ html {
     }
 
     .header__button-lang {
-        width: 45px;
+        min-width: 45px;
         min-height: 45px;
         font-style: normal;
         font-weight: 400;
@@ -261,5 +541,161 @@ html {
         font-size: 14px;
 
     }
+
+    /*адаптив для главного*/
+
+
+    .messenger{
+        display: none;
+    }
+    .main__glavnoe {
+        min-height: fit-content;
+        min-width: 100vw;
+       
+    
+    }
+    
+    .container-flex {
+        display: block;
+       
+    }
+    
+    .main__block-left {
+        background-color: #E95258; 
+        display: flex;
+        
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 100%;
+        padding-left: 8%;
+     
+    
+    }
+    
+    .main__block-right {
+        background-color:#F9F9F9; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 100%;
+          
+    }
+
+
+    .main__h1 {
+        padding-top: 75px;
+        padding-bottom: 15px;
+        font-family: 'TTHovesExtraBold';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #F9F9F9;
+    }
+    
+    .main__text {
+    
+        padding-bottom: 25px;
+        font-family: 'TTHovesDemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        color: #F9F9F9;
+    }
+    
+    .main__list {
+        list-style-type: none;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    .main__item::before {
+        content: "○";
+        color: white;
+    }
+    .button_white {
+        padding: 12px 30px;
+        font-family: 'TTHovesMedium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #F9F9F9;
+        background: transparent;
+        border: 1px solid #F9F9F9;
+        border-radius: 25px;
+        margin-bottom: 30px;
+    }
+    .button_blue {
+        padding: 12px 30px;
+        font-family: 'TTHovesMedium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #32495E;
+        background: transparent;
+        border: 1px solid #32495E;
+        border-radius: 25px;
+        margin-bottom: 30px;
+    
+    }
+
+
+    .main__list-right {
+        list-style-type: none;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    
+   
+    
+    .main__item {
+        padding-bottom: 8px;
+    }
+    
+    .main__item-right {
+        padding-bottom: 8px;
+    }
+       .main__h1-right {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-family: 'TTHovesExtraBold';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #32495E;
+    }
+    
+    .main__text-rigt {
+        padding-bottom: 25px;
+        font-family: 'TTHovesDemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        color: #32495E;
+
+    
+    
+    .main__link {
+        font-family: 'TTHovesRegular';
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+    
+    }
+   
 
 }

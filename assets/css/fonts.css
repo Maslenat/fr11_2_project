@@ -1,5 +1,5 @@
 @font-face { 
-    font-family: "TTHovesDemiBold";
+    font-family: 'TTHovesDemiBold';
     src: url("../fonts/TTHovesDemiBold/TTHovesDemiBold.eot");
     src: url("../fonts/TTHovesDemiBold/TTHovesDemiBold.eot?#iefix")format("embedded-opentype"),
     url("../fonts/TTHovesDemiBold/TTHovesDemiBold.woff") format("woff"),
@@ -8,7 +8,7 @@
     font-weight: 600;
 }
 @font-face { 
-    font-family: "TTHovesRegular";
+    font-family: 'TTHovesRegular';
     src: url("../fonts/TTHovesRegular/TTHovesRegular.eot");
     src: url("../fonts/TTHovesRegular/TTHovesRegular.eot?#iefix")format("embedded-opentype"),
     url("../fonts/TTHovesRegular/TTHovesRegular.woff") format("woff"),
@@ -17,7 +17,7 @@
     font-weight: 400;
 }
 @font-face { 
-    font-family: "TTHovesMedium";
+    font-family: 'TTHovesMedium';
     src: url("../fonts/TTHovesMedium/TTHovesMedium.eot");
     src: url("../fonts/TTHovesMedium/TTHovesMedium.eot?#iefix")format("embedded-opentype"),
     url("../fonts/TTHovesMedium/TTHovesMedium.woff") format("woff"),
@@ -26,7 +26,7 @@
     font-weight: 500;
 }
 @font-face { 
-    font-family: "TTHovesBold";
+    font-family: 'TTHovesBold';
     src: url("../fonts/TTHovesBold/TTHovesBold.eot");
     src: url("../fonts/TTHovesBold/TTHovesBold.eot?#iefix")format("embedded-opentype"),
     url("../fonts/TTHovesBold/TTHovesBold.woff") format("woff"),
@@ -35,7 +35,7 @@
     font-weight: 700;
 }
 @font-face { 
-    font-family: "TTHovesExtraBold";
+    font-family: 'TTHovesExtraBold';
     src: url("../fonts/TTHovesExtraBold/TTHovesExtraBold.eot");
     src: url("../fonts/TTHovesExtraBold/TTHovesExtraBold.eot?#iefix")format("embedded-opentype"),
     url("../fonts/TTHovesExtraBold/TTHovesExtraBold.woff") format("woff"),
