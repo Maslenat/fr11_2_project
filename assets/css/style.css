@@ -386,6 +386,59 @@ li {
 }
 
 /* конец заливка фона значов и подсветка границы)*/
+.section-spesialist__title{
+    padding-left: 5%;
+font-family: TT Hoves;
+font-style: normal;
+font-weight: 800;
+font-size: 44px;
+line-height: 52px;
+text-transform: uppercase;
+color: #32495E;
+}
+
+.grid{
+    padding-left: 5%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 225px);
+}
+.section-spesialist__text_big{
+font-family: 'TTHovesExtraBold';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 20px;
+color: #32495E;
+padding-bottom: 3%;
+}
+
+
+.section-spesialist__text_small
+{
+    font-family: 'TTHovesRegular';
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #32495E;
+
+}
+.section-spesialist__pic{
+    max-width: 100%;
+    padding-bottom: 10%;
+}
+.section-spesialist__button-position{
+    position: relative;
+
+}
+
+
+
+
+
+
 
 
 
@@ -393,7 +446,7 @@ li {
 
 
 
-@media (min-width:1024px) {
+@media screen and (min-width:1024px) {
 
     .header__logo-picadapt,
     .header__button {
@@ -402,7 +455,7 @@ li {
 }
 
 
-@media (max-width:1023px) {
+@media screen and (max-width:1023px) {
 
     .header__logo-pic,
     .header__button {
@@ -432,7 +485,7 @@ li {
         min-height: 40px;}
 }
 
-@media (max-width:767px)
+@media screen and (max-width:767px)
  {
      /*адаптив хедер*/
     .header {
@@ -683,7 +736,7 @@ li {
         font-size: 12px;
         line-height: 14px;
         text-align: left;
-        color: #32495E;
+        color: #32495E;}
 
     
     
@@ -695,7 +748,6 @@ li {
         font-size: 12px;
         line-height: 15px;
     
-    }
-   
+    } 
 
 }
