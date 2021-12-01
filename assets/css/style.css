@@ -140,7 +140,7 @@ li {
 /* Главная страница*/
 
 .main__glavnoe {
-    min-height: 100vh;
+    min-height: fit-content;
     min-width: 100vw;
     background: no-repeat left bottom/25% url('../images/PictureOnRed.svg'),
         no-repeat right bottom/25% url('../images/PictureOnWhite.svg'),
@@ -366,54 +366,30 @@ li {
     background: #E95258;
     box-shadow: 0 0 10px #E95258;
 }
+/*эффекты при наведении*/
+.massenger__block_red:hover {
+    box-shadow: 0 0 20px red;
+}
+.massenger__block_blue:hover {
+    box-shadow: 0 0 20px #32495E;
+}
+.massenger__block_lightblue:hover {
+    box-shadow: 0 0 20px #4598FF;
+}
+.massenger__block_green:hover{
+    box-shadow: 0 0 20px #14AC51;
+
+}
+.massenger__block_violet:hover{
+    box-shadow: 0 0 20px #C33A7C;
+
+}
 
 /* конец заливка фона значов и подсветка границы)*/
 
-/*форма для ввода данных*/
-.forma {
-    display: none;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-color: #32495E;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
 
-}
 
-.forma-dano {
-    display: none;
-    width: 475px;
-    height: 517px;
-    margin: 20% auto;
-    background: #32495E;
-    border: 1px solid #32495E;
-    border-radius: 20px;
-    position: absolute;
-    top: 10%;
-    right: 35%;
-}
-
-.forma-dano__zagolovok {
-    font-family: 'TTHovesExtraBold';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 42px;
-    text-align: center;
-    color: #F9F9F9;
-}
-
-.massenger__block_red:hover {
-    box-shadow: 0 0 30px red;
-}
-
-.massenger__block_red:hover .forma,
-.massenger__block_red:hover .forma-dano {
-    display: block;
-}
-
-/* адаптивность логотипа и хедера*/
+/* адаптивность*/
 
 
 
@@ -451,9 +427,13 @@ li {
         font-size: 12px;
         line-height: 15px;
     }
+    .massenger__block {
+        min-width: 40px;
+        min-height: 40px;}
 }
 
-@media (max-width:767px) {
+@media (max-width:767px)
+ {
     .header {
         background-color: #FFFFFF;
         position: fixed;
@@ -560,5 +540,6 @@ li {
         font-size: 14px;
 
     }
+   
 
 }
