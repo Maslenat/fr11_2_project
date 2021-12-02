@@ -14,7 +14,8 @@ html {
 h1,
 p,
 ul,
-li {
+li,
+h3 {
     margin: 0;
     padding: 0;
 }
@@ -393,9 +394,12 @@ li {
 
 /*секция специалисты*/
 
-
+.section-spesialist{
+    background-color: #F9F9F9;
+}
 .section-spesialist__title{
-    
+padding-top: 5%;  
+padding-bottom: 5%;  
 font-family: TT Hoves;
 font-style: normal;
 font-weight: 800;
