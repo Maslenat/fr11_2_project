@@ -25,6 +25,7 @@ h3 {
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
+    
 }
 
 
@@ -44,6 +45,11 @@ h3 {
     justify-content: space-between;
 
 }
+.header__logo{
+    padding-left: 5%;
+}
+
+
 
 .header__list {
     display: flex;
@@ -398,6 +404,7 @@ h3 {
     background-color: #F9F9F9;
 }
 .section-spesialist__title{
+    padding-left: 5%;
 padding-top: 5%;  
 padding-bottom: 5%;  
 font-family: TT Hoves;
@@ -410,7 +417,7 @@ color: #32495E;
 }
 
 .grid{
-    
+    padding-left: 5%;
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(4, 1fr);
@@ -481,6 +488,9 @@ color: #32495E;
         margin-top: 0;
         width: 100vw;
     }
+    .header__nav{
+        padding-right: 5%;
+    }
 
     .main__h1-right,
     .main__h1 {
@@ -502,6 +512,7 @@ color: #32495E;
             font-size: 34px;
         }
         .grid{
+            padding-right: 5%;
             padding-left: 5%;
             display: grid;
             gap: 20px;
@@ -517,6 +528,9 @@ color: #32495E;
 @media screen and (max-width:767px)
  {
      /*адаптив хедер*/
+     .header__nav{
+        padding-right: 0;
+    }
     .header {
         background-color: #FFFFFF;
         position: fixed;
@@ -533,7 +547,7 @@ color: #32495E;
         width: 110px;
         height: 30px;
     }
-
+   
     .header__button {
         padding: 10px;
         display: block;
@@ -649,7 +663,7 @@ color: #32495E;
         flex-direction: column;
         align-items: flex-start;
         min-width: 100%;
-        padding-left: 8%;
+        padding-left: 5%;
      
     
     }
@@ -660,6 +674,7 @@ color: #32495E;
         flex-direction: column;
         align-items: flex-start;
         min-width: 100%;
+          padding-left: 5%;
           
     }
 
