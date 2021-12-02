@@ -248,6 +248,7 @@ li {
 
 
 .button_white {
+    max-width: 160px;
     padding: 16px 44px;
     font-family: 'TTHovesMedium';
     font-style: normal;
@@ -259,6 +260,7 @@ li {
     background: transparent;
     border: 1px solid #F9F9F9;
     border-radius: 25px;
+    text-decoration: none;
 }
 
 .button_white:hover,
@@ -269,6 +271,7 @@ li {
 }
 
 .button_blue {
+    max-width: 160px;
     padding: 16px 44px;
     font-family: 'TTHovesMedium';
     font-style: normal;
@@ -280,6 +283,7 @@ li {
     background: transparent;
     border: 1px solid #32495E;
     border-radius: 25px;
+    text-decoration: none;
 
 }
 
@@ -386,8 +390,12 @@ li {
 }
 
 /* конец заливка фона значов и подсветка границы)*/
+
+/*секция специалисты*/
+
+
 .section-spesialist__title{
-    padding-left: 5%;
+    
 font-family: TT Hoves;
 font-style: normal;
 font-weight: 800;
@@ -398,7 +406,7 @@ color: #32495E;
 }
 
 .grid{
-    padding-left: 5%;
+    
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(4, 1fr);
@@ -430,7 +438,8 @@ color: #32495E;
     padding-bottom: 10%;
 }
 .section-spesialist__button-position{
-    position: relative;
+    display: block;
+    margin: 50px auto;
 
 }
 
@@ -483,6 +492,22 @@ color: #32495E;
     .massenger__block {
         min-width: 40px;
         min-height: 40px;}
+
+        .section-spesialist__title{
+            padding-left: 5%;
+            font-size: 34px;
+        }
+        .grid{
+            padding-left: 5%;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 215px;
+        }
+        .section-spesialist__cart_display{
+            display: none;
+        }
+
 }
 
 @media screen and (max-width:767px)
@@ -670,6 +695,7 @@ color: #32495E;
         color: white;
     }
     .button_white {
+        max-width: 160px;
         padding: 12px 30px;
         font-family: 'TTHovesMedium';
         font-style: normal;
@@ -684,6 +710,7 @@ color: #32495E;
         margin-bottom: 30px;
     }
     .button_blue {
+        max-width: 160px;
         padding: 12px 30px;
         font-family: 'TTHovesMedium';
         font-style: normal;
@@ -749,5 +776,27 @@ color: #32495E;
         line-height: 15px;
     
     } 
+    .grid{
+        padding-left: 5%;
+        padding-right: 20%;
+        display: block;
+       
+    }
+    .section-spesialist__cart_display{
+        display: none;
+    }
+    .section-spesialist__title{
+        font-size: 18px;
+line-height: 26px;
+    }
+.section-spesialist__text_big,
+.section-spesialist__text_small
+{
+    font-size: 12px;
+    line-height: 15px;
 
 }
+.section-spesialist__cart{
+    padding-bottom: 10%;
+}
+ }
