@@ -1,6 +1,10 @@
 @import url('normalize.css');
 @import url('fonts.css');
 
+body {
+    font-family: 'TT Hoves';
+}
+
 html {
     box-sizing: border-box;
 }
@@ -625,7 +629,7 @@ h3 {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #32495E;
+    color: #8093AC;
 
 }
 
@@ -634,6 +638,66 @@ h3 {
 }
 
 
+.section-news__container-cart {
+
+    width: inherit;
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.section-news__cart {
+    width: 30%;
+}
+
+.section-news__cart-img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+
+
+}
+
+.section-news__cart_background {
+    background-color: #E95258;
+}
+
+.section-news__carts_h4 {
+    padding: 10px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F9F9F9;
+    margin: 0;
+}
+
+.section-news__carts_p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F9F9F9;
+}
+
+.section-news__carts_link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F9F9F9;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+}
 
 
 /* адаптивность*/
@@ -747,7 +811,8 @@ h3 {
     }
 
     .section-foto__image>p,
-    .section-foto__image_tablet {
+    .section-foto__image_tablet,
+    .section-news__cart_tablet {
         display: none;
     }
 
@@ -1103,6 +1168,22 @@ h3 {
     .section-foto__image_mobile,
     .section-foto__image_tablet {
         display: none;
+    }
+    .section-news__cart {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-news__container-cart {
+        display: block;
+    }
+
+    .section-news__cart-img {
+        width: 100%;
+
+        display: block;
+        object-fit: cover;
+
     }
 
 }
