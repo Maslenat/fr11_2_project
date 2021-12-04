@@ -256,8 +256,8 @@ h3 {
 
 
 .button_white {
-    max-width: 160px;
-    padding: 16px 44px;
+    max-width: 190px;
+    padding: 16px 35px;
     font-family: 'TTHovesMedium';
     font-style: normal;
     font-weight: 500;
@@ -279,8 +279,8 @@ h3 {
 }
 
 .button_blue {
-    max-width: 160px;
-    padding: 16px 44px;
+    max-width: 190px;
+    padding: 16px 35px;
     font-family: 'TTHovesMedium';
     font-style: normal;
     font-weight: 500;
@@ -592,6 +592,11 @@ padding-bottom: 8%;
     .massenger__block {
         min-width: 40px;
         min-height: 40px;
+    }
+    .button_white, .button_blue {
+        font-size: 12px;
+        line-height: 15px;
+
     }
 
     .section-spesialist__title {
