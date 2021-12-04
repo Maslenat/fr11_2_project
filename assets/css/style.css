@@ -489,7 +489,7 @@ h3 {
 
 }
 
-.section {
+.section-price {
 
     background: linear-gradient(to right,
             transparent 60%, #F3F5FA 10% 70%, transparent 10% 80%, #F3F5FA 10% 90%, transparent 10%);
@@ -501,45 +501,140 @@ h3 {
 .section__inner {
     padding: 4% 5%;
 }
-.table-price__head{
+
+.table-price__head {
     text-align: left;
     font-family: 'TTHovesRegular';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 15px;
-color: #32495E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #32495E;
 
 }
 
-.table-price__row{
+.table-price__row {
     font-family: 'TTHovesRegular';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-color: #8093AC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8093AC;
 
 }
-.table-price{
+
+.table-price {
     width: 50%;
 }
-.table-price th{
-   
+
+.table-price th {
+
     padding-bottom: 15%;
 }
-.table-price td{
 
-padding-bottom: 8%;
+.table-price td {
+
+    padding-bottom: 8%;
 
 }
-.container-flex_content{
+
+.container-flex_content {
     justify-content: space-between;
 }
-.table-price td:last-child{
+
+.table-price td:last-child {
     font-weight: 800;
-    color:#32495E;
+    color: #32495E;
 }
+
+/* для секции фото*/
+.section-foto {
+
+    background: linear-gradient(to right,
+            #32495E 60%, #49647D 10% 70%, #32495E 10% 80%, #49647D 10% 90%, #32495E 10%);
+}
+
+.section-foto__list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding-bottom: 3%;
+}
+
+.section-foto__link {
+    text-decoration: none;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F9F9F9;
+
+}
+
+.section-foto__link:hover {
+    opacity: 0.8;
+}
+
+
+.foto-gridcontainer>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.section-foto__image {
+    position: relative;
+}
+
+.section-foto__image p {
+    position: absolute;
+    bottom: 3%;
+    left: 1%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F9F9F9;
+
+    opacity: 0.8;
+}
+
+.foto-gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(106px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+/* для секции тnews*/
+
+.section-news__list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding-bottom: 3%;
+}
+
+.section-news__link {
+    text-decoration: none;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #32495E;
+
+}
+
+.section-news__link:hover {
+    opacity: 0.8;
+}
+
+
+
 
 /* адаптивность*/
 
@@ -556,7 +651,14 @@ padding-bottom: 8%;
         font-size: 44px;
         line-height: 52px;
     }
-}
+
+  
+
+
+    }
+   
+
+
 
 
 @media screen and (max-width:1023px) {
@@ -593,7 +695,9 @@ padding-bottom: 8%;
         min-width: 40px;
         min-height: 40px;
     }
-    .button_white, .button_blue {
+
+    .button_white,
+    .button_blue {
         font-size: 12px;
         line-height: 15px;
 
@@ -627,12 +731,26 @@ padding-bottom: 8%;
         padding: 5% 5%;
     }
 
-.table-price_display{
-    display: none;
-}
-.table-price{
-    width: 60%;
-}
+    .table-price_display {
+        display: none;
+    }
+
+    .table-price {
+        width: 60%;
+    }
+
+
+    .foto-gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(106px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .section-foto__image>p,
+    .section-foto__image_tablet {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:767px) {
@@ -951,18 +1069,40 @@ padding-bottom: 8%;
         background: none;
 
     }
-    .table-price_display{
+
+    .table-price_display {
         display: none;
     }
-    .table-price{
+
+    .table-price {
         width: 100%;
     }
-    .table-price__row{
-        
-    font-size: 12px;
-    line-height: 15px;
-  
-    
+
+    .table-price__row {
+
+        font-size: 12px;
+        line-height: 15px;
+
+
+    }
+
+    .section-foto__link, .section-news__link {
+        font-size: 11px;
+        line-height: 15px;
+
+    }
+
+
+    .foto-gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(97px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .section-foto__image>p,
+    .section-foto__image_mobile,
+    .section-foto__image_tablet {
+        display: none;
     }
 
 }
