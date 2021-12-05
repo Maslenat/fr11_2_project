@@ -653,11 +653,11 @@ h3 {
 }
 
 .section-news__cart-img {
-   width: 100%;
+    width: 100%;
     display: block;
     height: 200px;
 
-     object-fit: cover;
+    object-fit: cover;
 
 
 }
@@ -701,6 +701,79 @@ h3 {
 
 }
 
+/*стили для footer*/
+.footer {
+    background-color: #333333;
+    position: absolute;
+    margin-top: 20px;
+    width: 100vw;
+    height: 302px;
+}
+
+.footer_contacts_main,
+.footer_meanu_main {
+    color: #F9F9F9;
+    font-family: 'TTHovesExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer_link {
+    color: #F9F9F9;
+    font-family: 'TTHovesRegular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.footer_contacts,
+.footer_low_text,
+.footer_up_text {
+    color: #F9F9F9;
+    font-family: 'TTHovesRegular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/*значек наверх*/
+.footer_up_circle {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    width: 34px;
+    height: 34px;
+    background: #E95258;
+}
+
+/*отмена маркеровки в списке*/
+.footer_contacts_main,
+.footer_meanu_main,
+.footer_meanu_item_1,
+.footer_meanu_item_2,
+.footer_meanu_item_3,
+.footer_meanu_item_4,
+.footer_meanu_item_5,
+.footer_contacts {
+    list-style-type: none;
+}
+
+/*Эффекты навигации в меню футера*/
+.footer_link:hover {
+    color: #F9F9F9;
+    font-family: 'TTHovesRegular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline;
+}
+
+/*Конец стилей футера*/
 
 /* адаптивность*/
 
@@ -718,11 +791,11 @@ h3 {
         line-height: 52px;
     }
 
-  
 
 
-    }
-   
+
+}
+
 
 
 
@@ -1153,7 +1226,8 @@ h3 {
 
     }
 
-    .section-foto__link, .section-news__link {
+    .section-foto__link,
+    .section-news__link {
         font-size: 11px;
         line-height: 15px;
 
@@ -1171,6 +1245,7 @@ h3 {
     .section-foto__image_tablet {
         display: none;
     }
+
     .section-news__cart {
         width: 100%;
         margin-bottom: 20px;
