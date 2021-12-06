@@ -701,6 +701,22 @@ h3 {
 
 }
 
+/*стили нас рекоммендуют*/
+
+.section-recomend_flex {
+    width: inherit;
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.section-recomend__img {
+    max-width: 100%;
+}
+
+/* конец стили нас рекоммендуют*/
+
 /*стили для footer*/
 .footer {
     background-color: #333333;
