@@ -3,6 +3,7 @@
 
 body {
     font-family: 'TT Hoves';
+    font-size: 100%;
 }
 
 html {
@@ -19,7 +20,8 @@ h1,
 p,
 ul,
 li,
-h3 {
+h3,
+h4 {
     margin: 0;
     padding: 0;
 }
@@ -717,6 +719,48 @@ h3 {
 
 /* конец стили нас рекоммендуют*/
 
+/*стили контакты*/
+.section-contact_flex {
+    width: inherit;
+    display: flex;
+    gap: 60px;
+    justify-content: start;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.section-contact__h4 {
+    font-family: 'TTHovesExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19.92px;
+    color: #32495E;
+
+}
+
+.section-contact__p {
+    font-family: 'TTHovesRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #32495E;
+
+}
+
+
+.section-contact__link {
+    display: block;
+    text-decoration: none;
+
+}
+
+
+
+
+/*стили контакты*/
+
 /*стили для footer*/
 .footer {
     background-color: #333333;
@@ -906,6 +950,21 @@ h3 {
     .section-news__cart_tablet {
         display: none;
     }
+
+/*контакты*/
+
+
+.section-contact__h4 {
+    font-size: 14px;
+    line-height: 17.43px;
+
+}
+
+.section-contact__p {
+    font-size: 12px;
+    line-height: 18px;
+
+}
 
 }
 
@@ -1100,6 +1159,10 @@ h3 {
         content: "○";
         color: white;
     }
+    .main__item::after {
+        content: "";
+
+    }
 
     .button_white {
         max-width: 160px;
@@ -1248,7 +1311,19 @@ h3 {
         line-height: 15px;
 
     }
+    .section-foto__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
 
+    }
+
+    .section-news__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+
+    }
 
     .foto-gridcontainer {
         display: grid;
@@ -1277,6 +1352,25 @@ h3 {
         display: block;
         object-fit: cover;
 
+    }
+    /*контакты*/
+    .section-contact__h4 {
+        font-size: 10px;
+        line-height: 12.45px;
+
+    }
+
+    .section-contact__p {
+        font-size: 8px;
+        line-height: 12px;
+
+    }
+
+    .section-contact_flex {
+        width: inherit;
+        display: flex;
+        gap: 2%;
+        justify-content: space-between;
     }
 
 }
